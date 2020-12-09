@@ -1,10 +1,10 @@
 <h4>新規投稿</h4>
-<%= form_with model:@blog, local:true do |a| %>
+<%= form_with model:@blog, local:true do |f| %>
     <h4>タイトル</h4>
-    <%= a.text_field :title %>
+    <%= f.text_field :title %>
     <h4>カテゴリー</h4>
-    <%= a.text_field :category %>
+    <%= f.text_field :category %>
     <h4>本文</h4>
-    <%= a.text_area :body %>
-    <%= a.submit '投稿' %>
+    <%= f.text_area :body %>
+    <%= f.submit '投稿' %>
 <% end %>
